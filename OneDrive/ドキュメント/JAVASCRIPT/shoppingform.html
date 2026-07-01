@@ -1,0 +1,30 @@
+<html>
+    <head>Shoppinggg</head>
+</html>
+<br>
+<html>
+    <body>
+        Apple :
+        <input type="number", id="apple",value=0><br><br>
+        Banana :
+        <input type="number", id="banana",value=0><br><br>
+
+        <button onclick="calculate()"> Submit</button>
+
+        <h2 id="result"></h2>
+
+        <script>
+            function calculate()
+            {
+                let total=0;
+                total+=250*Number(document.getElementById("apple").value);
+                total+=100*Number(document.getElementById("banana").value);
+            
+
+               document.getElementById("result").innerHTML=total;
+            }
+
+        </script>
+
+    </body>
+</html>
